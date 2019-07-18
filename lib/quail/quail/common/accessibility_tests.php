@@ -6450,7 +6450,7 @@ class videosEmbeddedOrLinkedNeedCaptions extends quailTest
 				if (isset($service)) {
 					if($service = 'youtube')
 					{
-					if($this->services->videoUnavailable($attr_val))
+					if($this->services[$service]->videoUnavailable($attr_val))
 					{
 						continue;
 					}
