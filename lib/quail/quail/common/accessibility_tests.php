@@ -6442,10 +6442,11 @@ class videosEmbeddedOrLinkedNeedCaptions extends quailTest
 			if ($video->hasAttribute($attr)) {
 				$attr_val = $video->getAttribute($attr);
 				if ( preg_match($search_youtube, $attr_val) ) {
-					$service = 'youtube';
-					if ($service->videoUnavailable($attr_val)){
-						break;
+					if ($service->videoUnavailable($attr_val))
+					{
+						continue;
 					}
+					$service = 'youtube';
 				}
 				elseif ( preg_match($search_vimeo, $attr_val) ) {
 					$service = 'vimeo';
