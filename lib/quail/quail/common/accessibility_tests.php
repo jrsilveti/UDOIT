@@ -6418,7 +6418,7 @@ class videosEmbeddedOrLinkedNeedCaptions extends quailTest
 	/**
 	*	@var int $default_severity The default severity code for this test.
 	*/
-	var $default_severity = QUAIL_TEST_SEVERE;
+	var $default_severity = QUAIL_TEST_SUGGESTION;
 
 	/**
 	*	@var array $services The services that this test will need. We're using
