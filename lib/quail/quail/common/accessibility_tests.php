@@ -6448,7 +6448,7 @@ class videosEmbeddedOrLinkedNeedCaptions extends quailTest
 					$service = 'vimeo';
 				}
 				if (isset($service)) {
-					if ($service->videoUnavailable($attr_val)) {
+					if ($service = 'youtube' {
 							$this->addReport($video);
 						
 						$captionState = $this->services[$service]->captionsMissing($attr_val);
